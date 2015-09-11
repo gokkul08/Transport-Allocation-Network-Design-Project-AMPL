@@ -1,0 +1,10 @@
+# This is the batch file - Annamalai Gokkul Natarajan
+reset;
+model '/Users/Gokkul/Desktop/ampl_macosx64/final.mod';
+data '/Users/Gokkul/Desktop/ampl_macosx64/final.dat';
+option solver '/Users/Gokkul/Desktop/ampl_macosx64/cplex';
+solve;
+display _ampl_elapsed_time;
+print'The output U-unused cars, X-cars/drivers for a particular points in a given time interval';
+display U;
+display X;
